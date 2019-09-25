@@ -1,0 +1,27 @@
+{
+  "name": "heroku-nodechatsocketio-gigantech",
+  "version": "1.0.0",
+  "description": "myFirstHerokuApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristianGigante/heroku-nodeChatSocketIo-gigantech.git"
+  },
+  "author": "ChristianGigante",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristianGigante/heroku-nodeChatSocketIo-gigantech/issues"
+  },
+  "homepage": "https://github.com/ChristianGigante/heroku-nodeChatSocketIo-gigantech#readme",
+  "engines": {
+    "node": "10.15"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
