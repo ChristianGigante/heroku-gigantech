@@ -1,10 +1,17 @@
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
+var path = require('path');
 var io = require('socket.io')(http);
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 9000;
 
-app.use('/',express.static('public'));
+//route
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, +'public/index.html'));
+});
+
 
 io.on('connection', function(socket){
   socket.on('chat message', function(msg){
