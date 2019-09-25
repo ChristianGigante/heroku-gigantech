@@ -12,7 +12,6 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, +'public/index.html'));
 });
 
-
 io.on('connection', function(socket){
   socket.on('chat message', function(msg){
     io.emit('chat message', msg);
