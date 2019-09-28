@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/ChristianGigante/heroku-nodeChatSocketIo-gigantech#readme",
   "engines": {
-    "node": "10.15"
+    "node": "v10.15.3"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "socket.io": "^1.7.3"
+    "socket.io": "^1.7.4"
   }
 }
