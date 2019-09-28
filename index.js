@@ -16,8 +16,9 @@ io.on('connection', function(socket){
   socket.on('chat message', function(msg){
     io.emit('chat message', msg);
   });
+
 });
 
-http.listen(port, function(){
+http.listen(port,'0.0.0.0', function(){
   console.log('listening on *:' + port);
 });
