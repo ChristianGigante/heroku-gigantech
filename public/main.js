@@ -15,7 +15,7 @@ $(document).ready(function () {
 
           if (msg.split(": ")[0] == id && !msg.includes("NewUserLogIn")) {
             if (!msg.includes("TYP1NG@M3$$@G3")) {
-              $('#messages').append("<div style='text-align:right;'>"+moment().format('LTS')+"<h2 id='me' class='btn btn-outline-success disabled'>" + msg.split(": ")[2] + "</h2></div>");
+              $('#messages').append("<div style='text-align:right;'><br><h2 id='me' class='btn btn-outline-success disabled'>" + msg.split(": ")[2] + "</h2><br><a class='badge badge-success'>"+moment().format('LTS')+"</a></div>");
             }
           } else {
             if (msg.includes("NewUserLogIn")) {
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
             } else {
               $("#typing").remove();
-              $('#messages').append("<div><h2 id='other' class='btn btn-outline-primary disabled'>" + msg.split(": ")[1] + ": " + msg.split(": ")[2] + "</h2>"+moment().format('LTS')+"</div>");
+              $('#messages').append("<div><br><h2 id='other' class='btn btn-outline-primary disabled'>" + msg.split(": ")[1] + ": " + msg.split(": ")[2] + "</h2><br><a class='badge badge-primary'>"+moment().format('LTS')+"</a></div>");
             }
           }
           window.scrollTo(0, document.body.scrollHeight);
