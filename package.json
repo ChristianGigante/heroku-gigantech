@@ -1,6 +1,6 @@
 {
-  "name": "heroku-nodechatsocketio-gigantech",
-  "version": "1.0.0",
+  "name": "heroku-gigantech",
+  "version": "0.0.1",
   "description": "myFirstHerokuApp",
   "main": "index.js",
   "scripts": {
